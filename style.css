@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Rose", cursive;
+}
+
+/* ------------------------------ */
+/* ---------- NAVBAR ------------ */
+/* ------------------------------ */
+
+body {
+    background: linear-gradient(rgba(1, 15, 69, 0.7), rgba(0, 0, 0, 0.7)),
+        url("./download.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    /* height: 100vh; */
+    
+    background-size: 100% 100%;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap:wrap;
+    margin-top: 10px;
+}
+
+.list {
+    list-style-type: none;
+}
+
+ul {
+    display: flex;
+    color: yellow;
+    cursor: pointer;
+}
+
+li {
+    padding: 30px;
+    font-size: 23px;
+}
+li:hover{
+    border: 1px solid yellow;
+}
+
+.button-small {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    padding: 4px 20px 4px 20px;
+    cursor: pointer;
+    border: 1px solid red;
+}
+
+/* ------------------------------ */
+/* ---------- HERO ------------ */
+/* ------------------------------ */
+h1 {
+    text-align: center;
+    width: 35%;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-size: 3rem;
+    font-weight: 1500;
+    color:rgb(255, 183, 0);
+}
+
+.button-large {
+    font-size: 20px;
+    background-color: red;
+    color: #fff;
+    padding: 15px;
+    cursor: pointer;
+    border: 1px solid red;
+}
+
+.bottom {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3rem;
+}
+
+.but {
+    text-align: center;
+    padding-top: 2rem;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom img {
+    width: 150px;
+}
+@media only screen and (max-width:765px){
+    h1{
+        font-size: 25px;
+        color: rgb(255, 183, 0);
+    }
+    .button-large {
+        font-size: 16px;
+        padding: 5px;
+        cursor: pointer;
+        border: 1px solid black;
+    }
+    .bottom img {
+        padding-top: 3rem;
+        width: 95px;
+        
+    }
+    li{
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+@media only screen and (min-width:325px){
+    h1{
+        font-size: 35px;
+    }
+}
+@media only screen and (min-width:490px){
+    h1{
+        font-size: 45px;
+    }
+}
+@media only screen and (min-width:700px){
+    h1{
+        font-size: 55px;}
+}
+@media only screen and (min-width:1200px){
+    h1{
+        font-size: 65px;
+    }
+}
